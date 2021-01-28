@@ -1,0 +1,8 @@
+.git/
+src/
+test/
+docs/
+docker/
+tmp/
+coverage/
+node_modules/
