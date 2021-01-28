@@ -1,0 +1,21 @@
+@import './_colors.styl';
+
+scroll-bar-size = 3px
+scroll-bar-border-radius = 2px
+
+::-webkit-scrollbar
+    width scroll-bar-size
+    height scroll-bar-size
+    border-radius scroll-bar-border-radius
+
+::-webkit-scrollbar-track-piece
+    border-radius scroll-bar-border-radius
+    background-color lighten(primary, 85%)
+
+::-webkit-scrollbar-thumb:vertical
+    border-radius scroll-bar-border-radius
+    background-color lighten(primary, 40%)
+
+::-webkit-scrollbar-thumb:horizontal
+    border-radius scroll-bar-border-radius
+    background-color lighten(primary, 40%)
