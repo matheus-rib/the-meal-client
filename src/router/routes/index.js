@@ -19,9 +19,9 @@ export default [
       {
         name: 'about',
         path: '/about',
-        component: componentImport('Index'),
+        component: componentImport('about/About'),
         meta: {
-          title: 'Home',
+          title: 'About',
         },
       },
       ...categories(componentImport),
