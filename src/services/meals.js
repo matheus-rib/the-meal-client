@@ -1,7 +1,7 @@
 import api from './api'
 
 function search(termToSearch) {
-  return api.get('/meals/categories', {
+  return api.get('/meals/search', {
     params: {
       search: termToSearch,
     },
