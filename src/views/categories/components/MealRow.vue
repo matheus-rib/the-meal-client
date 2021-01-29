@@ -1,5 +1,5 @@
 <template lang="pug">
-router-link.card.height-100(:to="{ name: 'random'}")
+router-link.card.height-100(:to="{ name: 'meal.show', params: { mealId: meal.idMeal } }")
   .card-image
     img.img-responsive(:src="meal.strMealThumb" :alt="meal.strMeal")
   .card-header

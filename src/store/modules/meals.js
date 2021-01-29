@@ -1,6 +1,6 @@
 import mealsServices from '@/services/meals'
 
-const state = { meal: {}, mealsList: [] }
+const state = { meal: null, mealsList: [] }
 
 const actions = {
   async fetchMeals({ commit }, searchTerm) {
@@ -19,6 +19,10 @@ const actions = {
     const data = await mealsServices.random()
 
     commit('setMeal', data)
+  },
+
+  resetMeal({ commit }) {
+    commit('setMeal', null)
   },
 }
 

@@ -1,4 +1,5 @@
 import categories from './categories'
+import meals from './meals'
 
 const componentImport = (view) => () => import(`@/views/${view}.vue`)
 
@@ -24,6 +25,7 @@ export default [
         },
       },
       ...categories(componentImport),
+      ...meals(componentImport),
     ],
   },
 ]
