@@ -11,9 +11,9 @@ export default [
       {
         name: 'random',
         path: '/random',
-        component: componentImport('Index'),
+        component: componentImport('meals/Random'),
         meta: {
-          title: 'Home',
+          title: 'Random meal',
         },
       },
       {
