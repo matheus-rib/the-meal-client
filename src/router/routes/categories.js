@@ -12,7 +12,7 @@ export default (componentImport) => [
     path: '/category/:category',
     component: componentImport('categories/Meals'),
     meta: {
-      title: 'Home',
+      title: 'Category',
     },
   },
 ]
