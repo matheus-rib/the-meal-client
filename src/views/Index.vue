@@ -1,5 +1,5 @@
 <template lang="pug">
-.container
+.container.grid-xl
   .d-flex
     .text-primary Hello World
     .fas.fa-check

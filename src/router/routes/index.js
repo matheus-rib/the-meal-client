@@ -1,12 +1,34 @@
-const componentImport = view => () => import(`@/views/${view}.vue`)
+const componentImport = (view) => () => import(`@/views/${view}.vue`)
 
 export default [
   {
     path: '/',
-    name: 'home',
-    component: componentImport('Index'),
-    mete: {
-      title: 'Home',
-    },
+    component: componentImport('Base'),
+    children: [
+      {
+        name: 'home',
+        path: '',
+        component: componentImport('Index'),
+        meta: {
+          title: 'Home',
+        },
+      },
+      {
+        name: 'random',
+        path: '/random',
+        component: componentImport('Index'),
+        meta: {
+          title: 'Home',
+        },
+      },
+      {
+        name: 'about',
+        path: '/about',
+        component: componentImport('Index'),
+        meta: {
+          title: 'Home',
+        },
+      },
+    ],
   },
 ]

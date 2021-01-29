@@ -8,7 +8,8 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes,
-  stringifyQuery: query =>
+  linkExactActiveClass: 'router-link-exact-active active',
+  stringifyQuery: (query) =>
     Object.values(query).length ? `?${qs.stringify(query)}` : '',
   parseQuery: qs.parse,
 })
