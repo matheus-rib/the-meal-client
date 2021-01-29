@@ -26,7 +26,7 @@ export default {
 .app-container
   display flex
   flex-direction column
-  height 100vh
+  height calc(100vh - 55px)
   .content
     flex 1
     background-color #fff
