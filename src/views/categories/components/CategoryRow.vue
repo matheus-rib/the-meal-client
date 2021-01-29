@@ -1,5 +1,5 @@
 <template lang="pug">
-router-link.card.height-100(:to="{ name: 'category', params: { category: category.strCategory } }")
+router-link.card.height-100(:to="{ name: 'category', params: { category: category.strCategory.toLowerCase() } }")
   .card-image
     img.img-responsive(:src="category.strCategoryThumb" :alt="category.strCategory")
   .card-header

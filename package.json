@@ -11,6 +11,7 @@
     "@fortawesome/fontawesome-free": "^5.15.2",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "paliari-js-utils": "^0.3.1",
     "qs": "^6.9.6",
     "spectre.css": "^0.5.9",
     "v-toaster": "^1.0.3",
