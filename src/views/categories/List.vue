@@ -2,6 +2,8 @@
 .flex-centered.content-full-height(v-if="loading") #[.loading.loading-lg]
 .container.grid-xl(v-else)
   page-title(title="Home" icon="fas fa-fw fa-home" subtitle="Meals categories")
+    div(slot="actions")
+      search-input
   list-manager(:loading="loading" :list="categoriesList")
     .columns
       .column.col-4.col-lg-6.col-sm-12.mb-2.pb-2(v-for="category in categoriesList")

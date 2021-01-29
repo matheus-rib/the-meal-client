@@ -2,6 +2,8 @@
 .flex-centered.content-full-height(v-if="loading") #[.loading.loading-lg]
 .container.grid-xl(v-else)
   page-title(icon="fas fa-hamburger" :title="meal.strMeal" subtitle="Learn how to prepare")
+    div(slot="actions")
+      search-input
   .columns
     .column.col-3.col-xs-12
       img.img-responsive(:src="meal.strMealThumb" alt="Meal picture")
