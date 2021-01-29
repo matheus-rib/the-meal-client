@@ -32,7 +32,7 @@ export default {
     background-color #fff
     overflow-y auto
     overflow-x hidden
-@media(max-width:959px)
+@media(max-width:803px)
   .app-container
     height calc(100vh - 55px)
 </style>
