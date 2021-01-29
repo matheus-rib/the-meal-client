@@ -26,10 +26,13 @@ export default {
 .app-container
   display flex
   flex-direction column
-  height calc(100vh - 55px)
+  height calc(100vh)
   .content
     flex 1
     background-color #fff
     overflow-y auto
     overflow-x hidden
+@media(max-width:959px)
+  .app-container
+    height calc(100vh - 55px)
 </style>
