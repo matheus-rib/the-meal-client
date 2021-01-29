@@ -3,7 +3,7 @@ const onErrorInterceptor = (errors = {}) => {
     if (error.message === 'Network Error') {
       return Promise.reject({
         code: 'networkError',
-        message: 'Falha na conexão',
+        message: 'Network error',
       })
     }
     const e = {
