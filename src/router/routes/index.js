@@ -1,3 +1,5 @@
+import categories from './categories'
+
 const componentImport = (view) => () => import(`@/views/${view}.vue`)
 
 export default [
@@ -5,14 +7,6 @@ export default [
     path: '/',
     component: componentImport('Base'),
     children: [
-      {
-        name: 'home',
-        path: '',
-        component: componentImport('Index'),
-        meta: {
-          title: 'Home',
-        },
-      },
       {
         name: 'random',
         path: '/random',
@@ -29,6 +23,7 @@ export default [
           title: 'Home',
         },
       },
+      ...categories(componentImport),
     ],
   },
 ]
